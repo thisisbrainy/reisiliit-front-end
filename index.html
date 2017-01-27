@@ -14,22 +14,22 @@
 <body>
 <fieldset>
 <div class="search-box"> <!-- start of search box -->
-  <div class="starting-point">
+  <div class="starting-point on-the-same-row">
     <div class="ui-widget">
     <label for="tags">Alguspunkt: </label>
     <input id="start">
     </div>
   </div>
-  <div class="destination">
+  <div class="destination on-the-same-row">
     <div class="ui-widget">
     <label for="tags">Sihtpunkt: </label>
     <input id="end">
     </div>
   </div>
-  <div class="departure-day"> <!-- departure month selection -->
-    <p>Date: <input type="text" id="datepicker" size="30"></p>
+  <div class="departure-day on-the-same-row"> <!-- departure month selection -->
+    <label>Date</label> <input type="text" id="datepicker" size="30"></p>
   </div>
-  <div class="duration">
+  <div class="duration on-the-same-row">
     <form action="#">
         <label for="length">Reisi kestvus: </label>
         <select name="length" id="length">
@@ -40,7 +40,7 @@
         </select>
     </form>
   </div>
-  <p><a href="#" class="button-broneering">Broneerima</a></p>
+  <div class="on-the-same-row"><a href="#" class="button-broneering">Broneerima</a></div>
 
   <p><button type="button" name="Submit" class="advanced-search">Lisavalikud</button></p>
   </div>
@@ -99,22 +99,74 @@
 <div class="results-list"> <!-- start of results from search -->
 <ul>
   <li>
-    <img src="img/thumbnail.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="#" class="button">Broneerima</a>
+
+    <div class="result-image">
+     <img src="img/thumbnail.jpg">
+    </div>
+
+    <div class="result-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <a href="vaade.html" class="button">Broneerima</a>
+
   </li>
   <li>
-    <img src="img/thumbnail.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="#" class="button">Broneerima</a>
+
+    <div class="result-image">
+     <img src="img/thumbnail.jpg">
+    </div>
+
+    <div class="result-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <a href="vaade.html" class="button">Broneerima</a>
+    
   </li>
   <li>
-    <img src="img/thumbnail.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a href="#" class="button">Broneerima</a>
+
+    <div class="result-image">
+     <img src="img/thumbnail.jpg">
+    </div>
+
+    <div class="result-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <a href="vaade.html" class="button">Broneerima</a>
+    
+  </li>
+  <li>
+
+    <div class="result-image">
+     <img src="img/thumbnail.jpg">
+    </div>
+
+    <div class="result-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <a href="vaade.html" class="button">Broneerima</a>
+    
+  </li>
+  <li>
+
+    <div class="result-image">
+     <img src="img/thumbnail.jpg">
+    </div>
+
+    <div class="result-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <a href="vaade.html" class="button">Broneerima</a>
+    
   </li>
 </ul>
 </div> <!-- end of results from search -->
