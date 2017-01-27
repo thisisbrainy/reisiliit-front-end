@@ -51,6 +51,17 @@ label {
 	margin-bottom: 5px;
 }
 
+#advanced-search {
+	display: block;
+	width: calc(100% + 40px);
+	background: #fbfbfb;
+	border-top: 1px solid #ddd;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: -20px;
+	margin-bottom: -20px;
+}
+
 .search-box {}
 .search-box .on-the-same-row {
 	display: inline-block;
