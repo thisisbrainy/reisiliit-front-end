@@ -30,12 +30,18 @@ $( function() { //Starting point select
 
   $( "#tabs" ).tabs();
 
-  $('input[type*="checkbox"]').change(function() {
-    if($(this).is(':checked')) { // Input is checked
-        $(this).parent().css('background', '#eee');
+  $('.advanced-search-blocks input[type="checkbox"]').on('change', function() {
+
+    if($(this).is(':checked')) {
+
+      $(this).parent().addClass('checked');
+
     } else {
-        $(this).parent().css('background', 'white');
+
+      $(this).parent().removeClass('checked');
+      
     }
-});
+
+  });
 
 });
