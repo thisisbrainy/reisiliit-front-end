@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="departure-day on-the-same-row"> <!-- departure month selection -->
-    <label>Date</label> <input type="text" id="datepicker" size="30"></p>
+    <label>Kuupäev: </label> <input type="text" id="datepicker" size="30"></p>
   </div>
   <div class="duration on-the-same-row">
     <form action="#">
@@ -45,51 +45,61 @@
   <p><button type="button" name="Submit" class="advanced-search">Lisavalikud</button></p>
   </div>
 
-  <div id="advanced-search" style="display:none;">
+  <div id="advanced-search" style="display:block;"> <!-- start of advanced-search -->
 
-  <div class="vacation-options">
-    <legend>Reisi tüübivalik: </legend>
-    <label for="advanced-type-extreme">Ekstreemsport</label>
-    <input type="checkbox" name="advanced-type-extreme">
-    <label for="advanced-type-vacation">Puhkusereis</label>
-    <input type="checkbox" name="advanced-type-vacation">
-    <label for="advanced-type-work">Tööreis</label>
-    <input type="checkbox" name="advanced-type-work">
-    <label for="advanced-type-cruise">Kruiis</label>
-    <input type="checkbox" name="advanced-type-cruise">
-  </div>
-  <div class="hotel-options">
-    <legend>Majutus : </legend>
-    <label for="advanced-opt-lux">Luksushotell</label>
-    <input type="checkbox" name="advanced-opt-lux">
-    <label for="advanced-opt-family">Perehotell</label>
-    <input type="checkbox" name="advanced-opt-family">
-    <label for="advanced-opt-spa">Spaa</label>
-    <input type="checkbox" name="advanced-opt-spa">
-    <label for="advanced-opt-cheap">Odav</label>
-    <input type="checkbox" name="advanced-opt-cheap">
-  </div>
-  <div class="hotel-attributes">
-    <legend>Majutuse lisavõimaused: </legend>
-    <label for="advanced-att-pool">Bassein</label>
-    <input type="checkbox" name="advanced-att-pool">
-    <label for="advanced-att-balcony">Rõdu</label>
-    <input type="checkbox" name="advanced-att-balcony">
-    <label for="advanced-att-wifi">Wifi</label>
-    <input type="checkbox" name="advanced-att-wifi">
-    <label for="advanced-att-tv">TV</label>
-    <input type="checkbox" name="advanced-att-tv">
-  </div>
-  <div class="hotel-stars">
-    <legend>Majutuse tärnid: </legend>
-    <label for="advanced-star-2">2 tärni</label>
-    <input type="checkbox" name="advanced-star-2">
-    <label for="advanced-star-3">3 tärni</label>
-    <input type="checkbox" name="advanced-star-3">
-    <label for="advanced-star-4">4 tärni</label>
-    <input type="checkbox" name="advanced-star-4">
-    <label for="advanced-star-5">5 tärni</label>
-    <input type="checkbox" name="advanced-star-5">
+  <div class="advanced-search-blocks-wrapper">
+    <div class="advanced-search-blocks">
+      <div class="vacation-options">
+        <legend>Reisi tüübivalik: </legend>
+        <label for="advanced-type-extreme">Ekstreemsport</label>
+        <input type="checkbox" name="advanced-type-extreme">
+        <label for="advanced-type-vacation">Puhkusereis</label>
+        <input type="checkbox" name="advanced-type-vacation">
+        <label for="advanced-type-work">Tööreis</label>
+        <input type="checkbox" name="advanced-type-work">
+        <label for="advanced-type-cruise">Kruiis</label>
+        <input type="checkbox" name="advanced-type-cruise">
+      </div>
+    </div>
+    <div class="advanced-search-blocks">
+      <div class="hotel-options">
+        <legend>Majutus : </legend>
+        <label for="advanced-opt-lux">Luksushotell</label>
+        <input type="checkbox" name="advanced-opt-lux">
+        <label for="advanced-opt-family">Perehotell</label>
+        <input type="checkbox" name="advanced-opt-family">
+        <label for="advanced-opt-spa">Spaa</label>
+        <input type="checkbox" name="advanced-opt-spa">
+        <label for="advanced-opt-cheap">Odav</label>
+        <input type="checkbox" name="advanced-opt-cheap">
+      </div>
+    </div>
+    <div class="advanced-search-blocks">
+      <div class="hotel-attributes">
+        <legend>Majutuse lisavõimaused: </legend>
+        <label for="advanced-att-pool">Bassein</label>
+        <input type="checkbox" name="advanced-att-pool">
+        <label for="advanced-att-balcony">Rõdu</label>
+        <input type="checkbox" name="advanced-att-balcony">
+        <label for="advanced-att-wifi">Wifi</label>
+        <input type="checkbox" name="advanced-att-wifi">
+        <label for="advanced-att-tv">TV</label>
+        <input type="checkbox" name="advanced-att-tv">
+      </div>
+    </div>
+    <div class="advanced-search-blocks">
+      <div class="hotel-stars">
+        <legend>Majutuse tärnid: </legend>
+        <label for="advanced-star-2">2 tärni</label>
+        <input type="checkbox" name="advanced-star-2">
+        <label for="advanced-star-3">3 tärni</label>
+        <input type="checkbox" name="advanced-star-3">
+        <label for="advanced-star-4">4 tärni</label>
+        <input type="checkbox" name="advanced-star-4">
+        <label for="advanced-star-5">5 tärni</label>
+        <input type="checkbox" name="advanced-star-5">
+      </div>
+    </div>
   </div>
  </div> <!-- end of advaned search -->
   <div id="search-button">
@@ -124,7 +134,7 @@
     </div>
 
     <a href="vaade.html" class="button">Rohkem</a>
-    
+
   </li>
   <li>
 
@@ -138,7 +148,7 @@
     </div>
 
     <a href="vaade.html" class="button">Rohkem</a>
-    
+
   </li>
   <li>
 
@@ -152,7 +162,7 @@
     </div>
 
     <a href="vaade.html" class="button">Rohkem</a>
-    
+
   </li>
   <li>
 
@@ -166,7 +176,7 @@
     </div>
 
     <a href="vaade.html" class="button">Rohkem</a>
-    
+
   </li>
 </ul>
 </div> <!-- end of results from search -->

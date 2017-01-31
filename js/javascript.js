@@ -27,8 +27,7 @@ $( function() { //Starting point select
   $('.advanced-search').on('click', function() { //opens advanced search
     $('#advanced-search').slideToggle(100);
     });
-  $( "input" ).checkboxradio({}); //advanced search checkboxes
 
   $( "#tabs" ).tabs();
 
-} ); 
+} );
