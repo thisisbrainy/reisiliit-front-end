@@ -30,4 +30,12 @@ $( function() { //Starting point select
 
   $( "#tabs" ).tabs();
 
-} );
+  $('input[type*="checkbox"]').change(function() {
+    if($(this).is(':checked')) { // Input is checked
+        $(this).parent().css('background', '#eee');
+    } else {
+        $(this).parent().css('background', 'white');
+    }
+});
+
+});

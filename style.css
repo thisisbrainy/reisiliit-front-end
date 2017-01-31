@@ -179,10 +179,6 @@ a.back-button {
 	transition: all 300ms ease;
 }
 
-.advanced-search-blocks li:checked {
-  background-color: #eee;
-}
-
 @media all and (max-width: 750px) {
 
   .advanced-search-blocks {
