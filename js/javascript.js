@@ -17,7 +17,12 @@ $( function() { //Starting point select
     source: destination
   }); //end of destination select
 
-  $( "#datepicker" ).datepicker("setDate", new Date());  //start datepicker
+  $( "#datepicker" ).datepicker({
+    dateFormat: 'dd-mm-yy'
+  });  //start datepicker
+
+  $('#datepicker').datepicker('setDate', new Date());
+  
   //end datepicker
 
   $( "#length" ).selectmenu(); //travel length select
