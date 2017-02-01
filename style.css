@@ -146,7 +146,7 @@ a.back-button {
 	transition: all 200ms ease;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
 
   .search-box .starting-point {
     width: calc(50% - 10px);
@@ -231,7 +231,7 @@ a.back-button {
 	transition: all 300ms ease;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
 
   .advanced-search-blocks {
     width: 100%;
@@ -245,7 +245,7 @@ a.back-button {
 	padding-bottom: 20px;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
 
 	.results-list {
 		padding-left: 0;
@@ -267,6 +267,15 @@ a.back-button {
 	margin-bottom: 20px;
 }
 
+@media all and (max-width: 600px) {
+
+	.results-list li {
+		display: block;
+		height: auto;
+	}
+
+}
+
 .results-list li .result-image {
 	display: block;
 	float: left;
@@ -276,10 +285,12 @@ a.back-button {
 	margin-right: 20px;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
 
 	.results-list li .result-image {
 		width: 100%;
+		height: 250px;
+		float: none;
 	}
 
 }
@@ -296,10 +307,11 @@ a.back-button {
 	width: calc(100% - 300px);
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
 
 	.results-list li .result-content {
 		width: 100%;
+		float: none;
 		padding-top: 10px;
 		padding-bottom: 10px
 	}
@@ -323,11 +335,13 @@ a.back-button {
 	right: 20px;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 600px) {
 
 	.results-list li .button {
-		position: inherit;
-		margin-left: calc(25% + 40px);
+		display: block;
+		text-align: center;
+		position: relative;
+		right: auto;
 	}
 }
 
