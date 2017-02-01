@@ -1,6 +1,6 @@
 /*  Document ready stuff */
 $(function() {
-  
+
   /* Everything related to the search area */
   // Start location
   $('#start').autocomplete({
@@ -43,6 +43,12 @@ $(function() {
   $('#length').selectmenu();
 
   // Advanced search
+
+  $('.advanced-search').on('click', function() {
+
+    $('#advanced-search').slideToggle(100);
+  });
+
   $('.advanced-search-blocks li').on('click', function(event) {
 
     if($(this).find('input[type="checkbox"]').is(':checked')) {
