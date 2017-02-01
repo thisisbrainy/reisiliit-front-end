@@ -114,15 +114,16 @@ a.back-button {
 .search-box {}
 .search-box .on-the-same-row {
 	display: inline-block;
-	width: calc(100% / 5 - 20px);
+	width: calc((100% - 72px) / 4);
 	margin-right: 20px;
 }
 
-.search-box .on-the-same-row:nth-child(5) {
+.search-box .on-the-same-row:nth-child(4) {
 	margin-right: 0;
 }
 
 .search-box .button-broneering {
+	float: right;
 	display: inline-block;
 	height: 40px;
 	line-height: 40px;
@@ -135,7 +136,7 @@ a.back-button {
 	padding-left: 20px;
 	padding-right: 20px;
 	vertical-align: top;
-	margin-top: -12px;
+	margin-top: 10px;
 	margin-left: 20px;
 }
 
@@ -145,7 +146,41 @@ a.back-button {
 	transition: all 200ms ease;
 }
 
+@media all and (max-width: 750px) {
+
+  .search-box .starting-point {
+    width: calc(50% - 10px);
+		float: left;
+		padding-bottom: 10px;
+  }
+
+	.search-box .destination {
+		width: calc(50% - 10px);
+		float: right;
+		margin-right: 0;
+		padding-bottom: 10px;
+	}
+
+	.search-box .departure-day {
+		width: calc(50% - 10px);
+		float: left;
+		padding-bottom: 10px;
+	}
+
+	.search-box .duration {
+		width: calc(50% - 10px);
+		float: right;
+		margin-right: 0;
+		padding-bottom: 10px;
+	}
+
+	.search-box .button-broneering {
+		float: right;
+	}
+}
+
 .search-box .advanced-search {
+	float: left;
 	cursor: pointer;
 	height: 40px;
 	line-height: 38px;
@@ -202,13 +237,21 @@ a.back-button {
     width: 100%;
     margin-right: 0;
   }
-
 }
 
 .results-list {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
+}
+
+@media all and (max-width: 750px) {
+
+	.results-list {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 }
 
 .results-list li {
@@ -233,6 +276,14 @@ a.back-button {
 	margin-right: 20px;
 }
 
+@media all and (max-width: 750px) {
+
+	.results-list li .result-image {
+		width: 100%;
+	}
+
+}
+
 .results-list li .result-image img {
 	width: 100%;
 	height: auto;
@@ -243,6 +294,15 @@ a.back-button {
 	display: block;
 	float: left;
 	width: calc(100% - 300px);
+}
+
+@media all and (max-width: 750px) {
+
+	.results-list li .result-content {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px
+	}
 }
 
 .results-list li a {
@@ -261,6 +321,14 @@ a.back-button {
 	position: absolute;
 	top: calc(50% - 20px);
 	right: 20px;
+}
+
+@media all and (max-width: 750px) {
+
+	.results-list li .button {
+		position: inherit;
+		margin-left: calc(25% + 40px);
+	}
 }
 
 .header {

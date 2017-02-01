@@ -12,229 +12,222 @@
   <title>Reisiliidu otsing</title>
 </head>
 <body>
-<fieldset>
-<div class="search-box"> <!-- start of search box -->
-  <div class="starting-point on-the-same-row">
-    <div class="ui-widget">
-    <label for="tags">Alguspunkt </label>
-    <input id="start">
-    </div>
-  </div>
-  <div class="destination on-the-same-row">
-    <div class="ui-widget">
-    <label for="tags">Sihtpunkt </label>
-    <input id="end">
-    </div>
-  </div>
-  <div class="departure-day on-the-same-row"> <!-- departure month selection -->
-    <label>Kuupäev </label> <input type="text" id="datepicker" size="30"></p>
-  </div>
-  <div class="duration on-the-same-row">
-    <form action="#">
-        <label for="length">Reisi kestvus </label>
-        <select name="length" id="length">
-          <option selected="selected">1 nädal</option>
-          <option>2 nädalat</option>
-          <option>3 nädalat</option>
-          <option>4 nädalat</option>
-        </select>
-    </form>
-  </div>
-  <div class="on-the-same-row"><a href="vaade.html" class="button-broneering">Otsi</a></div>
-
-  <p><button type="button" name="Submit" class="advanced-search">Lisavalikud</button></p>
-  </div>
-
-  <div id="advanced-search" style="display:none;"> <!-- start of advanced-search -->
-
-  <div class="advanced-search-blocks-wrapper">
-    <div class="advanced-search-blocks">
-      <div class="vacation-options">
-        <legend>Reisi tüübivalik </legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="advanced-type-extreme">
-              <label for="advanced-type-extreme">Ekstreemsport</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-type-vacation">
-              <label for="advanced-type-vacation">Puhkusereis</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-type-work">
-              <label for="advanced-type-work">Tööreis</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-type-cruise">
-              <label for="advanced-type-cruise">Kruiis</label>
-              <div class="clear"></div>
-            </li>
-          </ul>
+  <fieldset>
+    <!-- start of search box -->
+    <div class="search-box">
+      <div class="starting-point on-the-same-row">
+        <div class="ui-widget">
+          <label for="tags">Alguspunkt </label>
+          <input id="start">
+        </div>
       </div>
-    </div>
-    <div class="advanced-search-blocks">
-      <div class="hotel-options">
-        <legend>Majutus </legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="advanced-opt-lux">
-              <label for="advanced-opt-lux">Luksushotell</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-opt-family">
-              <label for="advanced-opt-family">Perehotell</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-opt-spa">
-              <label for="advanced-opt-spa">Spaa</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-opt-cheap">
-              <label for="advanced-opt-cheap">Odav</label>
-              <div class="clear"></div>
-            </li>
-          </ul>
+
+      <!-- destination selection -->
+      <div class="destination on-the-same-row">
+        <div class="ui-widget">
+          <label for="tags">Sihtpunkt </label>
+          <input id="end">
+        </div>
       </div>
-    </div>
-    <div class="advanced-search-blocks">
-      <div class="hotel-attributes">
-        <legend>Majutuse lisavõimaused </legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="advanced-att-pool">
-              <label for="advanced-att-pool">Bassein</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-att-balcony">
-              <label for="advanced-att-balcony">Rõdu</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-att-wifi">
-              <label for="advanced-att-wifi">Wifi</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-att-tv">
-              <label for="advanced-att-tv">TV</label>
-              <div class="clear"></div>
-            </li>
-          </ul>
+
+      <!-- departure selection -->
+      <div class="departure-day on-the-same-row">
+        <label>Kuupäev </label> <input type="text" id="datepicker" size="30"></p>
       </div>
-    </div>
-    <div class="advanced-search-blocks">
-      <div class="hotel-stars">
-        <legend>Majutuse tärnid </legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="advanced-star2" >
-              <label for="advanced-star-2">2 tärni</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-star3">
-              <label for="advanced-star-3">3 tärni</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-star4">
-              <label for="advanced-star-4">4 tärni</label>
-              <div class="clear"></div>
-            </li>
-            <li>
-              <input type="checkbox" name="advanced-star5">
-              <label for="advanced-star-5">5 tärni</label>
-              <div class="clear"></div>
-            </li>
-          </ul>
+
+      <!-- duration selection -->
+      <div class="duration on-the-same-row">
+        <form action="#">
+          <label for="length">Reisi kestvus </label>
+          <select name="length" id="length">
+            <option selected="selected">1 nädal</option>
+            <option>2 nädalat</option>
+            <option>3 nädalat</option>
+            <option>4 nädalat</option>
+          </select>
+        </form>
       </div>
-    </div>
-  </div>
- </div> <!-- end of advaned search -->
-  <div id="search-button">
-  </div>
-</div> <!-- end of search box -->
-</fieldset>
-<div class="results-list"> <!-- start of results from search -->
-<ul>
-  <li>
 
-    <div class="result-image">
-     <img src="img/thumbnail.jpg">
+      <!-- advanced search options -->
+      <p><button type="button" name="Submit" class="advanced-search">Lisavalikud</button></p>
+
+      <!-- search results button -->
+      <div><a href="vaade.html" class="button-broneering">Otsi</a></div>
+      <div class="clear"></div>
+
     </div>
 
-    <div class="result-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
+    <!-- start of advanced-search -->
+    <div id="advanced-search" style="display:none;">
 
-    <a href="vaade.html" class="button">Rohkem</a>
-
-  </li>
-  <li>
-
-    <div class="result-image">
-     <img src="img/thumbnail.jpg">
-    </div>
-
-    <div class="result-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <a href="vaade.html" class="button">Rohkem</a>
-
-  </li>
-  <li>
-
-    <div class="result-image">
-     <img src="img/thumbnail.jpg">
-    </div>
-
-    <div class="result-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <a href="vaade.html" class="button">Rohkem</a>
-
-  </li>
-  <li>
-
-    <div class="result-image">
-     <img src="img/thumbnail.jpg">
-    </div>
-
-    <div class="result-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <a href="vaade.html" class="button">Rohkem</a>
-
-  </li>
-  <li>
-
-    <div class="result-image">
-     <img src="img/thumbnail.jpg">
-    </div>
-
-    <div class="result-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <a href="vaade.html" class="button">Rohkem</a>
-
-  </li>
-</ul>
-</div> <!-- end of results from search -->
+      <div class="advanced-search-blocks-wrapper">
+        <div class="advanced-search-blocks">
+          <div class="vacation-options">
+            <legend>Reisi tüübivalik </legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="advanced-type-extreme">
+                <label for="advanced-type-extreme">Ekstreemsport</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-type-vacation">
+                <label for="advanced-type-vacation">Puhkusereis</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-type-work">
+                <label for="advanced-type-work">Tööreis</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-type-cruise">
+                <label for="advanced-type-cruise">Kruiis</label>
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="advanced-search-blocks">
+          <div class="hotel-options">
+            <legend>Majutus </legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="advanced-opt-lux">
+                <label for="advanced-opt-lux">Luksushotell</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-opt-family">
+                <label for="advanced-opt-family">Perehotell</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-opt-spa">
+                <label for="advanced-opt-spa">Spaa</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-opt-cheap">
+                <label for="advanced-opt-cheap">Odav</label>
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="advanced-search-blocks">
+          <div class="hotel-attributes">
+            <legend>Majutuse lisavõimaused </legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="advanced-att-pool">
+                <label for="advanced-att-pool">Bassein</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-att-balcony">
+                <label for="advanced-att-balcony">Rõdu</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-att-wifi">
+                <label for="advanced-att-wifi">Wifi</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-att-tv">
+                <label for="advanced-att-tv">TV</label>
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="advanced-search-blocks">
+          <div class="hotel-stars">
+            <legend>Majutuse tärnid </legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="advanced-star2" >
+                <label for="advanced-star-2">2 tärni</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-star3">
+                <label for="advanced-star-3">3 tärni</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-star4">
+                <label for="advanced-star-4">4 tärni</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <input type="checkbox" name="advanced-star5">
+                <label for="advanced-star-5">5 tärni</label>
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of advaned search -->
+    <div id="search-button"></div>
+    </div> <!-- end of search box -->
+  </fieldset>
+  <!-- start of results list -->
+  <div class="results-list">
+    <ul>
+      <li>
+        <div class="result-image">
+          <img src="img/thumbnail.jpg">
+        </div>
+        <div class="result-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="vaade.html" class="button">Rohkem</a>
+      </li>
+      <li>
+        <div class="result-image">
+          <img src="img/thumbnail.jpg">
+        </div>
+        <div class="result-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="vaade.html" class="button">Rohkem</a>
+      </li>
+      <li>
+        <div class="result-image">
+          <img src="img/thumbnail.jpg">
+        </div>
+        <div class="result-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="vaade.html" class="button">Rohkem</a>
+      </li>
+      <li>
+        <div class="result-image">
+          <img src="img/thumbnail.jpg">
+        </div>
+        <div class="result-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="vaade.html" class="button">Rohkem</a>
+      </li>
+      <li>
+        <div class="result-image">
+          <img src="img/thumbnail.jpg">
+        </div>
+        <div class="result-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="vaade.html" class="button">Rohkem</a>
+      </li>
+    </ul>
+  </div> <!-- end of search results -->
 </body>
 </html>
