@@ -17,10 +17,8 @@ $( function() { //Starting point select
     source: destination
   }); //end of destination select
 
-  $( "#datepicker" ).datepicker();  //start datepicker
-  $( "#anim" ).on( "change", function() {
-  $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
-  });//end datepicker
+  $( "#datepicker" ).datepicker("setDate", new Date());  //start datepicker
+  //end datepicker
 
   $( "#length" ).selectmenu(); //travel length select
 
@@ -39,7 +37,7 @@ $( function() { //Starting point select
     } else {
 
       $(this).parent().removeClass('checked');
-      
+
     }
 
   });
