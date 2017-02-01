@@ -33,19 +33,22 @@ $( function() { //Starting point select
 
   $( "#tabs" ).tabs();
 
-  $('.advanced-search-blocks input[type="checkbox"]').on('change', function() {
+  $('.advanced-search-blocks li').on('click', function(event) {
 
-    if($(this).is(':checked')) {
+    if($(this).find('input[type="checkbox"]').is(':checked')) {
 
-      $(this).parent().addClass('checked');
+      $(this).removeClass('checked');
+      $(this).find('input[type="checkbox"]').prop('checked', false);
 
     } else {
 
-      $(this).parent().removeClass('checked');
+      $(this).addClass('checked');
+      $(this).find('input[type="checkbox"]').prop('checked', true);
 
     }
 
   });
+
 
   $.ajax({
     method: 'GET',
