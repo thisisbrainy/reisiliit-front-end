@@ -130,20 +130,28 @@ a.back-button {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
-	background: #111;
+	background: #666;
 	border-radius: 2px;
 	padding-left: 20px;
 	padding-right: 20px;
 	vertical-align: top;
-	margin-top: -10px;
+	margin-top: -12px;
 	margin-left: 20px;
 }
 
+.search-box .button-broneering:hover {
+	background-color: #111;
+	color: #fff;
+	transition: all 200ms ease;
+}
+
 .search-box .advanced-search {
+	cursor: pointer;
 	height: 40px;
 	line-height: 38px;
 	background: #fff;
 	text-transform: uppercase;
+	font-weight: 500 !important;
 	outline: none;
 	border: 1px solid #ddd;
 	border-radius: 2px;
@@ -151,6 +159,13 @@ a.back-button {
 	padding-right: 15px;
 	margin-top: 10px;
 }
+
+.search-box .advanced-search:hover {
+	background: #666;
+	color: #fff;
+	transition: all 200ms ease;
+}
+
 .advanced-search-blocks:nth-child(2n) {
   margin-right: 0;
 }
