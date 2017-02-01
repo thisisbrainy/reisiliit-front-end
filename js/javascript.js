@@ -44,4 +44,14 @@ $( function() { //Starting point select
 
   });
 
+  $.ajax({
+    method: 'GET',
+    url: 'http://ipinfo.io',
+    dataType: 'jsonp'
+  }).done(function(response) {
+
+    $('input#start').val(response.city);
+
+  });
+
 });
