@@ -1,38 +1,48 @@
-$( function() { //Starting point select
-  var startingpoint = [
-    "Tallinn",
-    "Tartu",
-    "Helsingi",
-  ];
-  $( "#start" ).autocomplete({
-    source: startingpoint
-  });   //end of starting point select
+/*  Document ready stuff */
+$(function() {
+  
+  /* Everything related to the search area */
+  // Start location
+  $('#start').autocomplete({
+    source: [
+      'Tallinn',
+      'Tartu',
+      'Helsingi'
+    ]
+  });
 
-  var destination = [ // destination select
-    "Hispaania",
-    "Holland",
-    "Hiina",
-  ];
-  $( "#end" ).autocomplete({
-    source: destination
-  }); //end of destination select
+  // Automatic location on page load
+  $.ajax({
+    method: 'GET',
+    url: 'http://ipinfo.io',
+    dataType: 'jsonp'
+  }).done(function(response) {
 
-  $( "#datepicker" ).datepicker({     //start datepicker
+    $('input#start').val(response.city);
+
+  });
+
+
+  // End location
+  $('#end').autocomplete({
+    source: [
+      'Hispaania',
+      'Holland',
+      'Hiina'
+    ]
+  });
+
+  // Departing date
+  $('#datepicker').datepicker({
     dateFormat: 'dd-mm-yy'
   });
 
   $('#datepicker').datepicker('setDate', new Date());
 
-  //end datepicker
+  // Trip duration
+  $('#length').selectmenu();
 
-  $( "#length" ).selectmenu(); //travel length select
-
-  $('.advanced-search').on('click', function() { //opens advanced search
-    $('#advanced-search').slideToggle(100);
-    });
-
-  $( "#tabs" ).tabs();
-
+  // Advanced search
   $('.advanced-search-blocks li').on('click', function(event) {
 
     if($(this).find('input[type="checkbox"]').is(':checked')) {
@@ -49,15 +59,7 @@ $( function() { //Starting point select
 
   });
 
-
-  $.ajax({
-    method: 'GET',
-    url: 'http://ipinfo.io',
-    dataType: 'jsonp'
-  }).done(function(response) {
-
-    $('input#start').val(response.city);
-
-  });
+  /* Everything related to the offer view */
+  $( "#tabs" ).tabs();
 
 });
