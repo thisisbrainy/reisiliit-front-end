@@ -323,7 +323,19 @@ a.back-button {
 .results-list li .result-content {
 	display: block;
 	float: left;
-	width: calc(100% - 300px);
+	width: calc(100% - 315px);
+}
+
+.results-list li .result-content p{
+	padding-bottom: 10px;
+}
+
+.results-list li .result-content .fa{
+	border: 1px solid #cecece;
+	border-radius: 2px;
+	padding: 5px 15px 5px 15px;
+	margin-top: 2px;
+	background: #edf6fa;
 }
 
 @media all and (max-width: 600px) {
