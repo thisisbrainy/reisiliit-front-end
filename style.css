@@ -67,7 +67,7 @@ fieldset {
 label {
 	display: block;
 	font-size: 11px;
-	font-weight: 600;
+	font-weight: 635;
 	color: #999;
 	text-transform: uppercase;
 	margin-bottom: 5px;
@@ -91,7 +91,7 @@ legend {
   margin-bottom: 15px;
   font-family: Helvetica, Sans-Serif, Arial;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 635;
   color: #777;
 }
 
@@ -155,7 +155,7 @@ a.back-button {
 	transition: all 200ms ease;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
   .search-box .starting-point {
     width: calc(50% - 10px);
@@ -240,7 +240,7 @@ a.back-button {
 	transition: all 300ms ease;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
   .advanced-search-blocks {
     width: 100%;
@@ -254,7 +254,7 @@ a.back-button {
 	padding-bottom: 20px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
 	.results-list {
 		padding-left: 0;
@@ -276,7 +276,7 @@ a.back-button {
 	margin-bottom: 20px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
 	.results-list li {
 		display: block;
@@ -294,7 +294,7 @@ a.back-button {
 	margin-right: 20px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
 	.results-list li .result-image {
 		width: 100%;
@@ -338,7 +338,7 @@ a.back-button {
 	background: #edf6fa;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
 	.results-list li .result-content {
 		width: 100%;
@@ -372,7 +372,7 @@ a.back-button {
 	transition: all 200ms ease;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 635px) {
 
 	.results-list li .button {
 		display: block;
