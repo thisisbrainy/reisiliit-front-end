@@ -172,6 +172,7 @@ input[type="checkbox"]:checked + label{
 .search-box .advanced-search:hover {
 	background: #666;
 	color: #fff;
+	border: 1px solid #666;
 	transition: all 200ms ease;
 }
 
