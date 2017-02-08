@@ -50,10 +50,9 @@
       </div>
 
       <!-- advanced search opening button -->
-      <p><button type="button" name="Submit" class="advanced-search">Lisavalikud</button></p>
-
-      <!-- search results button -->
-      <div><a href="vaade.html" class="button-broneering">Otsi</a></div>
+      <div class="on-the-same-row">
+        <button type="button" name="Submit" class="advanced-search on-the-same-row">Lisavalikud</button>
+      </div>
       <div class="clear"></div>
 
     </div>
@@ -63,108 +62,173 @@
 
       <div class="advanced-search-blocks-wrapper">
         <div class="advanced-search-blocks">
-          <div class="vacation-options">
-            <legend>Reisi tüübivalik </legend>
+          <div class="housing-ratings">
+            <legend>Majutuse tase </legend>
             <ul>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-type-extreme">
-                <label for="advanced-type-extreme">Ekstreemsport</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-apartment">
+                <label for="advanced-type-apartment">Apartment</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-type-vacation">
-                <label for="advanced-type-vacation">Puhkusereis</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-hostel">
+                <label for="advanced-type-hostel">Hostel</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-type-work">
-                <label for="advanced-type-work">Tööreis</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-villa">
+                <label for="advanced-type-villa">Villa</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-type-cruise">
-                <label for="advanced-type-cruise">Kruiis</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-1star">
+                <label for="advanced-type-1star"><i class="fa fa-star"></i></label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-2star">
+                <label for="advanced-type-2star"><i class="fa fa-star"></i><i class="fa fa-star"></i></label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-3star">
+                <label for="advanced-type-3star"><i class="fa fa-star"><i class="fa fa-star"></i><i class="fa fa-star"></i></i></label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-4star">
+                <label for="advanced-type-4star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-type-5star">
+                <label for="advanced-type-5star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></label>
                 <div class="clear"></div>
               </li>
             </ul>
           </div>
         </div>
         <div class="advanced-search-blocks">
-          <div class="hotel-options">
-            <legend>Majutus </legend>
+          <div class="catering">
+            <legend>Toitlustus </legend>
             <ul>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-lux">
-                <label for="advanced-opt-lux">Luksushotell</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-ro">
+                <label for="advanced-opt-ro">RO - ainult tuba</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-family">
-                <label for="advanced-opt-family">Perehotell</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-bb">
+                <label for="advanced-opt-bb">BB - hommikusöök</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-spa">
-                <label for="advanced-opt-spa">Spaa</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-hb">
+                <label for="advanced-opt-hb">HB - hommiku ja õhtusöök</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-cheap">
-                <label for="advanced-opt-cheap">Odav</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-fb">
+                <label for="advanced-opt-fb">FB - hommiku, lõuna ja õhtusöök</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-ai">
+                <label for="advanced-opt-ai">AI - kõik hinnas</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-opt-uai">
+                <label for="advanced-opt-uai">UAI - ultra kõik hinnas</label>
                 <div class="clear"></div>
               </li>
             </ul>
           </div>
         </div>
         <div class="advanced-search-blocks">
-          <div class="hotel-attributes">
-            <legend>Majutuse lisavõimaused </legend>
+          <div class="activities">
+            <legend>Tegevused </legend>
             <ul>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-att-pool">
-                <label for="advanced-att-pool">Bassein</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-att-snorkeling">
+                <label for="advanced-att-snorkeling">Snorgeldamine</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-att-balcony">
-                <label for="advanced-att-balcony">Rõdu</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-att-sunny">
+                <label for="advanced-att-balcony">Päikesepuhkus</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-att-wifi">
-                <label for="advanced-att-wifi">Wifi</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-att-wedding">
+                <label for="advanced-att-wedding">Pulmareis</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-att-tv">
-                <label for="advanced-att-tv">TV</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-att-shopping">
+                <label for="advanced-att-shopping">Ostlemine</label>
                 <div class="clear"></div>
               </li>
             </ul>
           </div>
         </div>
         <div class="advanced-search-blocks">
-          <div class="hotel-stars">
-            <legend>Majutuse tärnid </legend>
+          <div class="comfort">
+            <legend>Komfort </legend>
             <ul>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-star2" >
-                <label for="advanced-star-2">2 tärni</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-pool" >
+                <label for="advanced-comfort-pool">Bassein</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-star3">
-                <label for="advanced-star-3">3 tärni</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-heated-pool">
+                <label for="advanced-comfort-heated-pool">Soojendusega bassein</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-star4">
-                <label for="advanced-star-4">4 tärni</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-tennis">
+                <label for="advanced-comfort-tennis">Tenniseväljak</label>
                 <div class="clear"></div>
               </li>
               <li>
-                <div class="fake-box"></div><input type="checkbox" name="advanced-star5">
-                <label for="advanced-star-5">5 tärni</label>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-playground">
+                <label for="advanced-comfort-playground">Laste mänguväljak</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-spa">
+                <label for="advanced-comfort-spa">Spaa</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-sauna">
+                <label for="advanced-comfort-sauna">Saun</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-hamam">
+                <label for="advanced-comfort-hamam">Hamam</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-gym">
+                <label for="advanced-comfort-gym">Jõusaal</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-carte-restoran">
+                <label for="advanced-comfort-carte-restoran">A'la carte restoran</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-air-conditioner">
+                <label for="advanced-comfort-air-conditioner">Konditsioneer</label>
+                <div class="clear"></div>
+              </li>
+              <li>
+                <div class="fake-box"></div><input type="checkbox" name="advanced-comfort-wifi">
+                <label for="advanced-comfort-wifi">Wifi</label>
                 <div class="clear"></div>
               </li>
             </ul>
@@ -176,74 +240,147 @@
     </div>
   </fieldset>
   <!-- start of results list -->
-  <div class="results-list">
+  <div id="result-tabs">
     <ul>
-      <li>
-        <div class="result-image">
-          <img src="img/thumbnail.jpg">
-        </div>
-        <div class="result-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span><i class="fa fa-user"></i>2 täiskasvanut</span>
-          <span><i class="fa fa-child"></i>1 laps</span>
-          <span><i class="fa fa-calendar"></i>1 nädal</span>
-          <span><i class="fa fa-star"></i>5 tärni hotell</span>
-        </div>
-        <a href="vaade.html" class="button">Rohkem</a>
-      </li>
-      <li>
-        <div class="result-image">
-          <img src="img/thumbnail.jpg">
-        </div>
-        <div class="result-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span><i class="fa fa-user"></i>2 täiskasvanut</span>
-          <span><i class="fa fa-child"></i>1 laps</span>
-          <span><i class="fa fa-calendar"></i>1 nädal</span>
-          <span><i class="fa fa-star"></i>5 tärni hotell</span>
-        </div>
-        <a href="vaade.html" class="button">Rohkem</a>
-      </li>
-      <li>
-        <div class="result-image">
-          <img src="img/thumbnail.jpg">
-        </div>
-        <div class="result-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span><i class="fa fa-user"></i>2 täiskasvanut</span>
-          <span><i class="fa fa-child"></i>1 laps</span>
-          <span><i class="fa fa-calendar"></i>1 nädal</span>
-          <span><i class="fa fa-star"></i>5 tärni hotell</span>
-        </div>
-        <a href="vaade.html" class="button">Rohkem</a>
-      </li>
-      <li>
-        <div class="result-image">
-          <img src="img/thumbnail.jpg">
-        </div>
-        <div class="result-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span><i class="fa fa-user"></i>2 täiskasvanut</span>
-          <span><i class="fa fa-child"></i>1 laps</span>
-          <span><i class="fa fa-calendar"></i>1 nädal</span>
-          <span><i class="fa fa-star"></i>5 tärni hotell</span>
-        </div>
-        <a href="vaade.html" class="button">Rohkem</a>
-      </li>
-      <li>
-        <div class="result-image">
-          <img src="img/thumbnail.jpg">
-        </div>
-        <div class="result-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <span><i class="fa fa-user"></i>2 täiskasvanut</span>
-          <span><i class="fa fa-child"></i>1 laps</span>
-          <span><i class="fa fa-calendar"></i>1 nädal</span>
-          <span><i class="fa fa-star"></i>5 tärni hotell</span>
-        </div>
-        <a href="vaade.html" class="button">Rohkem</a>
-      </li>
+      <li><a href="#tabs-1">Kõik pakkumised</a></li>
+      <li><a href="#tabs-2">Eripakkumised</a></li>
+      <li><a href="#tabs-3">Viimased kohad</a></li>
     </ul>
+    <div id="tabs-1">
+      <div class="results-list">
+        <ul>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="tabs-2">
+      <div class="results-list">
+        <ul>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="tabs-3">
+      <div class="results-list">
+        <ul>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+          <li>
+            <div class="result-image">
+              <img src="img/thumbnail.jpg">
+            </div>
+            <div class="result-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <span><i class="fa fa-user"></i>2 täiskasvanut</span>
+              <span><i class="fa fa-child"></i>1 laps</span>
+              <span><i class="fa fa-calendar"></i>1 nädal</span>
+              <span><i class="fa fa-star"></i>5 tärni hotell</span>
+            </div>
+            <a href="vaade.html" class="button">Rohkem</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>

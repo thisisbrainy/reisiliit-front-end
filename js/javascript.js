@@ -64,8 +64,10 @@ $(function() {
     }
 
   });
+  /* Result list tabs on front page*/
+  $( '#result-tabs' ).tabs();
 
   /* Everything related to the offer view */
-  $( "#tabs" ).tabs();
+  $( '#view-tabs' ).tabs();
 
 });

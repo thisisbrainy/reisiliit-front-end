@@ -85,42 +85,40 @@ input[type="checkbox"]:checked + label{
 }
 
 /* Everything on first page seeable search area*/
-.search-box {}
 .search-box .on-the-same-row {
 	display: inline-block;
-	width: calc((100% - 72px) / 4);
+	width: calc((100% - 96px) / 5);
 	margin-right: 20px;
 }
 
-.search-box .on-the-same-row:nth-child(4) {
+.search-box .on-the-same-row:nth-child(5) {
 	margin-right: 0;
 }
 
-.search-box .button-broneering {
-	float: right;
-	display: inline-block;
+.search-box .advanced-search {
+	width: 100%;
+	cursor: pointer;
 	height: 40px;
-	line-height: 40px;
-	font-size: 12px;
-	text-decoration: none;
-	color: #fff;
+	line-height: 38px;
+	background: #fff;
 	text-transform: uppercase;
-	background: #666;
+	font-weight: 500 !important;
+	outline: none;
+	border: 1px solid #ddd;
 	border-radius: 2px;
-	padding-left: 20px;
-	padding-right: 20px;
-	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-top: 10px;
-	margin-left: 20px;
 }
 
-.search-box .button-broneering:hover {
-	background-color: #111;
+.search-box .advanced-search:hover {
+	background: #666;
 	color: #fff;
+	border: 1px solid #666;
 	transition: all 200ms ease;
 }
 
-@media all and (max-width: 635px) {
+@media all and (max-width: 725px) {
 
   .search-box .starting-point {
     width: calc(50% - 10px);
@@ -148,32 +146,10 @@ input[type="checkbox"]:checked + label{
 		padding-bottom: 10px;
 	}
 
-	.search-box .button-broneering {
-		float: right;
+	.search-box .advanced-search {
+		width: auto;
 	}
-}
 
-.search-box .advanced-search {
-	float: left;
-	cursor: pointer;
-	height: 40px;
-	line-height: 38px;
-	background: #fff;
-	text-transform: uppercase;
-	font-weight: 500 !important;
-	outline: none;
-	border: 1px solid #ddd;
-	border-radius: 2px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-top: 10px;
-}
-
-.search-box .advanced-search:hover {
-	background: #666;
-	color: #fff;
-	border: 1px solid #666;
-	transition: all 200ms ease;
 }
 
 /* All about advanced-search */
@@ -232,6 +208,45 @@ input[type="checkbox"]:checked + label{
 }
 
 /* All about reults list*/
+#result-tabs .ui-tabs-nav {
+    height: 2.35em;
+    text-align: center;
+}
+#result-tabs .ui-tabs-nav li {
+    display: inline-block;
+    float: none;
+    top: 0px;
+    margin: 0em;
+    padding-bottom: 0px;
+}
+
+#result-tabs {
+    border: none;
+}
+#result-tabs .ui-widget-header {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+#result-tabs .ui-tabs-nav .ui-state-default {
+    background: transparent;
+    border: none;
+}
+#result-tabs .ui-tabs-nav .ui-state-active {
+    background: transparent url(img/uiTabsArrow.png) no-repeat bottom center;
+    border: none;
+		transition: all 300ms ease;
+}
+#result-tabs .ui-tabs-nav .ui-state-default a {
+    color: #c0c0c0;
+}
+#result-tabs .ui-tabs-nav .ui-state-active a {
+    color: #666;
+}
+
 .results-list {
 	padding-left: 20px;
 	padding-right: 20px;
